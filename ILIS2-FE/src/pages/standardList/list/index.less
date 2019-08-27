@@ -1,0 +1,40 @@
+//body {
+//    background: green;
+//}
+//
+//h1, h2 {
+//    font-weight: normal;
+//}
+//ul {
+//    list-style-type: none;
+//    padding: 0;
+//}
+//a {
+//    color: #42b983;
+//}
+@import "../../../common/global.less";
+.expired-box {
+    display: inline-block;
+    float: right;
+    i {
+        display: inline-block;
+        height: 14px;
+        width: 14px;
+        background: @primary-orange;
+        margin-right: 10px;
+    }
+}
+.active {
+    color: @primary-orange;
+}
+.search-header {
+    margin-bottom: 10px;
+    &-all {
+        height: @height;
+        line-height: @height;
+        i.anticon {
+            font-size: @iconSize;
+            margin-left: 10px;
+        }
+    }
+}

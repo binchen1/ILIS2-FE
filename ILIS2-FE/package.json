@@ -1,0 +1,59 @@
+{
+  "name": "ilis-fe",
+  "version": "1.0.0",
+  "description": "web of ilis",
+  "main": "index.js",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --config ./configs/webpack.dev.config.js --progress",
+    "buildDev": "npm run del && webpack --config ./configs/webpack.dev.config.js --progress && npm run buildProject && npm run buildProject && npm run del",
+    "buildProd": "npm run del && webpack --config ./configs/webpack.prod.config.js --progress && npm run buildProject && npm run buildProject && npm run del",
+    "modify": "node ./projectConfig/rename.js",
+    "del": "node ./projectConfig/delFile.js",
+    "buildProject": "node ./projectConfig/buildFiles.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-plugin-import": "^1.12.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "clean-webpack-plugin": "^1.0.0",
+    "cross-env": "^5.2.0",
+    "css-loader": "^2.0.0",
+    "echarts": "^4.2.1",
+    "html-webpack-plugin": "^3.2.0",
+    "jsx-loader": "^0.13.2",
+    "less": "^3.9.0",
+    "less-loader": "^4.1.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "postcss-loader": "^3.0.0",
+    "qs": "^6.7.0",
+    "style-loader": "^0.23.1",
+    "url-loader": "^1.1.2",
+    "vue-loader": "^15.7.1",
+    "vue-style-loader": "^4.1.2",
+    "vue-template-compiler": "^2.6.10",
+    "web-webpack-plugin": "^4.6.5",
+    "webpack": "^4.27.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.7.2",
+    "webpack-merge": "^4.2.1"
+  },
+  "dependencies": {
+    "ant-design-vue": "^1.3.13",
+    "axios": "^0.19.0",
+    "babel-polyfill": "^6.26.0",
+    "qs": "^6.7.0",
+    "vue": "^2.6.10",
+    "vue-router": "^3.0.7",
+    "vuex": "^3.1.1"
+  }
+}

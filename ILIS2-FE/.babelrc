@@ -1,0 +1,20 @@
+{
+	"compact":false,
+	"presets": [
+		[
+			"env", 
+			{ "modules": false }
+		],
+		"stage-0"
+	],
+	"plugins":[
+		[
+			"import",
+			{
+				"libraryName": "ant-design-vue",
+				"libraryDirectory": "es",
+				"style": "css"
+			}
+		]
+	]
+}
