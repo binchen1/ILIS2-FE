@@ -43,7 +43,7 @@
     "vue-template-compiler": "^2.6.10",
     "web-webpack-plugin": "^4.6.5",
     "webpack": "^4.27.1",
-    "webpack-cli": "^3.1.2",
+    "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.7.2",
     "webpack-merge": "^4.2.1"
   },
